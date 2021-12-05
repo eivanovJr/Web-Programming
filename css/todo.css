@@ -1,0 +1,36 @@
+main {
+    width: 100%;
+}
+
+.beautiful-table {
+    width: 80%;
+    margin: auto;
+    border-collapse: collapse;
+}
+
+.beautiful-table td {
+    border: 1px black solid;
+}
+
+.beautiful-table tr:nth-child(2n) {
+    background: #eee;
+}
+
+.beautiful-table tr:hover, .beautiful-table tr:nth-child(2n):hover {
+    background: #ccc;
+}
+
+.beautiful-table th {
+    border: 1px black solid;
+    background: #ddd;
+}
+
+@media screen and (max-width: 870px) {
+    main {
+        margin-top: 100px;
+        min-height: calc(100vh - 150px);
+    }
+    .beautiful-table {
+        width: 100%;
+    }
+}
