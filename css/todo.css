@@ -10,6 +10,7 @@ main {
 
 .beautiful-table td {
     border: 1px black solid;
+    text-align: center;
 }
 
 .beautiful-table tr:nth-child(2n) {
