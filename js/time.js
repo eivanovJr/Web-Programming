@@ -10,6 +10,4 @@ window.onload = function () {
         if (navElements[i].href === window.location.href)
             navElements[i].classList.add("selected");
     }
-
 }
-

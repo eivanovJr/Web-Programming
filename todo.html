@@ -20,57 +20,32 @@
     <table class="beautiful-table">
         <thead>
             <tr>
-                <th>#</th>
                 <th>Таска</th>
                 <th>Описание</th>
                 <th>действие</th>
             </tr>
         </thead>
-        <tbody>
+        <tbody id="insertForm">
             <tr>
-                <td>1</td>
-                <td>web</td>
-                <td>сделать web</td>
-                <td>labs</td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>ml</td>
-                <td>писать</td>
-                <td>labs</td>
-            </tr>
-            <tr>
-                <td>3</td>
-                <td>primat</td>
-                <td>учить</td>
-                <td>в процессе</td>
-            </tr>
-            <tr>
-                <td>4</td>
-                <td>history</td>
-                <td>музей</td>
-                <td>в процессе</td>
-            </tr>
-            <tr>
-                <td>5</td>
-                <td>uml</td>
-                <td>сделать</td>
-                <td>не делать</td>
-            </tr>
-            <tr>
-                <td>6</td>
-                <td>linux</td>
-                <td>Virtual</td>
-                <td>в процессе</td>
+                <td><input placeholder="Название задачи" required id="insertName"></td>
+                <td><input placeholder="Описание задачи" required id="insertDescription"></td>
+                <td><input type="button" value="Добавить" required id="insertButton"></td>
             </tr>
         </tbody>
     </table>
+    <template id="InsertRow">
+        <tr>
+            <td></td>
+            <td></td>
+            <td><button>Удалить</button></td>
+        </tr>
+    </template>
 </main>
 <footer>
     <a href="https://t.me/eivanov" target="_blank">&copy; @eivanov 2021</a>
     <div id="timer"></div>
     <script src="js/time.js"></script>
-    <script src="js/selected_item.js"></script>
+    <script src="js/table.js"></script>
 </footer>
 </body>
 </html>

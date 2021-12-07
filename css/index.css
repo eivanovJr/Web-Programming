@@ -30,6 +30,19 @@ header nav {
 .selected {
     color: #700;
 }
+
+#comments p {
+    color: #700;
+}
+
+#comments ins {
+    background: yellow;
+}
+
+.shadow {
+    filter: drop-shadow(5px 5px 10px #000);
+}
+
 header a {
     text-decoration: none;
     color: #555;
