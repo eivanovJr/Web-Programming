@@ -17,7 +17,7 @@ main {
     background: #eee;
 }
 
-.beautiful-table tr:hover, .beautiful-table tr:nth-child(2n):hover {
+.beautiful-table tr:hover {
     background: #ccc;
 }
 

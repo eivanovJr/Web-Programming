@@ -17,6 +17,7 @@ header {
     text-align: center;
     box-shadow: 0 0 10px #999;
     background: #eeeb;
+    z-index: 99;
 }
 header nav {
     width: 50%;
