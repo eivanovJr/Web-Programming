@@ -26,16 +26,6 @@ function getTable() {
     }
     var addNameCell = document.getElementById('insertName');
     var addDescriptionCell = document.getElementById('insertDescription');
-    addNameCell.addEventListener('keydown', function(e) {
-        if (e === 13) {
-            AddButton.click();
-        }
-    });
-    addDescriptionCell.addEventListener('keydown', function(e) {
-        if (e === 13) {
-            AddButton.click();
-        }
-    });
     AddButton.onclick = function () {
         addTable(addNameCell, addDescriptionCell, items);
     }
