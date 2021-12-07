@@ -22,7 +22,19 @@ function getTable() {
     if (localStorage.key('tasks')){
         try {
             items = JSON.parse(localStorage.getItem('tasks'));
+            if (items.length === undefined) {
+                items = [];
+            }
+            for (let i = 0; i < items.length; i++){
+                if (items[i]._name === undefined || items[i]._description === undefined)
+                    items.removeItem(i);
+            }
+            if (items.length === 0) {
+                items = [];
+            }
+            localStorage.setItem('tasks', JSON.stringify(items));
         } catch (e) {
+            localStorage.removeItem('tasks')
             items = [];
         }
     }

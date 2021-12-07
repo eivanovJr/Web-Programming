@@ -1,6 +1,7 @@
-var time = new Date(performance.timing.connectStart);
+
 
 (window.onload = function () {
+    var time = new Date(performance.timeOrigin);
     let curTime = new Date();
     let timer = document.getElementById("timer");
     timer.innerText = (curTime - time).toString() + "ms";
