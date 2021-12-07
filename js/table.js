@@ -19,7 +19,13 @@ function addRow(tasks, i) {
 function getTable() {
 
     var items = [];
-    localStorage.key('tasks') ? items = JSON.parse(localStorage.getItem('tasks')) : items = [];
+    if (localStorage.key('tasks')){
+        try {
+            items = JSON.parse(localStorage.getItem('tasks'));
+        } catch (e) {
+            items = [];
+        }
+    }
 
     for (let i = 0; i < items.length; i++) {
         addRow(items, i);

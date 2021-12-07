@@ -1,6 +1,6 @@
 var time = new Date(performance.timing.connectStart);
 
-window.onload = function () {
+(window.onload = function () {
     let curTime = new Date();
     let timer = document.getElementById("timer");
     timer.innerText = (curTime - time).toString() + "ms";
@@ -10,4 +10,4 @@ window.onload = function () {
         if (navElements[i].href === window.location.href)
             navElements[i].classList.add("selected");
     }
-}
+})();
