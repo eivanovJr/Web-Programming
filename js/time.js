@@ -1,4 +1,4 @@
-var time = PerformanceNavigationTiming.arguments.connectStart
+var time = new Date(performance.timing.connectStart);
 
 window.onload = function () {
     let curTime = new Date();
