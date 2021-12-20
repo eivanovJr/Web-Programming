@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Иванов Евгений</title>
+    <link rel="stylesheet" href="css/users.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+<header>
+    <nav>
+        <a href="/Web-Programming/" class="nav-element">Главная</a>
+        <a href="/Web-Programming/todo" class="nav-element">TODO-List</a>
+    </nav>
+</header>
+<main>
+    <table id="users">
+        <thead>
+        <tr>
+            <th>Имя</th>
+            <th>Никнейм</th>
+            <th>email</th>
+            <th>телефон</th>
+        </tr>
+        </thead>
+        <tbody id="users-insert">
+        <template id="templateUser">
+            <tr>
+                <td>name</td>
+                <td>nickname</td>
+                <td>email</td>
+                <td>telephone</td>
+            </tr>
+        </template>
+        <template id="templateRow">
+            <tr>
+                <td colspan="4">temp</td>
+            </tr>
+        </template>
+        <tr>
+            <td colspan="4"><button onclick="generate()">сгенерировать</button></td>
+        </tr>
+        </tbody>
+    </table>
+</main>
+</body>
+<footer>
+    <a href="https://t.me/eivanov" target="_blank">&copy; @eivanov 2021</a>
+    <div id="timer"></div>
+    <script src="js/users.js"></script>
+</footer>
+</html>
